@@ -1,0 +1,29 @@
+{
+  "name": "mern00",
+  "version": "1.0.0",
+  "description": "Very First Fullstack Project with MERN",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/winthawdaraung/MERN00.git"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/winthawdaraung/MERN00/issues"
+  },
+  "homepage": "https://github.com/winthawdaraung/MERN00#readme",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.5",
+    "nodemon": "^3.1.9"
+  }
+}
