@@ -20,10 +20,13 @@ export const useProductStore = create((set) => ({
 		return { success: true, message: "Product created successfully" };
 	},
     getProducts: async () => {
-        const res = await fetch("/api/products");
+        const res = await fetch("/api/products", {
+            method: "GET"
+        });
         const data = await res.json();
         set({ products: data.data });
     },
+
     deleteProduct: async (id) => {
         const res = await fetch(`/api/products/${id}`, {
             method: "DELETE",
@@ -53,8 +56,10 @@ export const useProductStore = create((set) => ({
             method: "GET"
         });
         const data = await res.json()
+        console.log("FUNTIONS",data.data);
         set({ product: data.data });
     }   
 }));
+
 
 

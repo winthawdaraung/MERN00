@@ -9,6 +9,7 @@ const HomePage = () => {
     useEffect(() => {
         getProducts();
     }, [getProducts]);
+    console.log("products", products);
 
     const handleDelete = async (product) => {
         const res = await deleteProduct(product._id);
